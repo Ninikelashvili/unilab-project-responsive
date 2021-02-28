@@ -177,7 +177,21 @@
     .search-block, .search-box{
         width: 100%;
     }
+    .mob-navigation{
+        display: block;
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+                transform: translateX(-100%);
+        -webkit-transition: -webkit-transform 0.5s ease-in;
+        transition: -webkit-transform 0.5s ease-in;
+        -o-transition: transform 0.5s ease-in;
+        transition: transform 0.5s ease-in;
+        transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    }
 
+}
+.nav-active{
+    transform: translateX(0%);
 }
 @media(max-width:690px){
     .trending-blocks, .small-pictures-boxes{
@@ -232,5 +246,33 @@
     }
     .numbers{
         display: block;
+    }
+    .city-box, .travel-box{
+        height: 300px;
+    }
+    .city-box h4, .travel-box h4{
+        top: 110px;
+
+    }
+    .big-pictures-box-par{
+        top:170px;
+    }
+    .big-pictures-data-time{
+        top:255px;
+    }
+    .third-section-mob-line{
+        display: block;
+    }
+    .small-pictures-box:last-child{
+        display: block;
+    }
+    .filter-div div{
+        display: none;
+    }
+    .display-none{
+        display: block;
+    }
+    .search-blocks{
+        padding: 40px 10px;
     }
 }
